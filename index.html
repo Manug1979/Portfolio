@@ -20,8 +20,8 @@
         <img id="logo" src="images/logo.png" alt="logo" title="Ceci est mon logo"/>
     </header>
     <nav>
-        <ul class="snip1226">
-            <li><a data-hover="Accueil" href="index.html" title="Aller à l'accueil" target="_blank">Accueil</a></li>
+        <ul class="nav-links">
+            <li><a data-hover="Accueil" href="#bienvenue">Accueil</a></li>
             <li><a data-hover="Projets" href="#projets" >Projets</a></li>
             <li><a data-hover="Contact" href="#contact" >Contact</a></li>
         </ul>
@@ -29,19 +29,21 @@
 
     <div class="container">
         <section class="bienvenue">
-            <h3>Bienvenue</h3>
-            <p>
+            <div id="bienvenue">
+               <h3>Bienvenue</h3>
+               <p>
                 J'accompagne les sociétés dans leur digitalisation en créant ou en améliorant leurs outils numériques depuis plus de 20 ans. 
                 Mission après mission, j'ai eu la possibilité de créer diverses applications desktop, web, ainsi que des services de processing ,des webAPI, avec toujours la même passion et dans des corps de métiers assez variés (HR, Legal, payroll, marketing).
                 Ce qui me motive c'est la création de solutions, découvrir l'origine des problématiques amenant à concevoir un outil digital, et comment cet outil va s'insérer dans le workflow organisationnel de l'entreprise.
-            </p>
+               </p>
+            </div>
         </section>
 
-        <section class="projets">
-            <h3>CV & PROJETS</h3>
-            <div id="projets">
 
-                <div class="projet">
+        <section id="projets">
+            <h3>Projets</h3>    
+            <div class="projets">
+               <div class="projet">
                     <a href="./images/CV Goblet 2023V4.pdf" target="_blank">
                         <div class="picture">
                             <img src="images/Capture_CV.png" alt="Mon CV">
@@ -65,7 +67,7 @@
                     <a href="https://github.com/Manug1979" target="_blank">
                         <div class="picture">
                             <img src="images/github.png" alt="GitHub" title="GitHub">
-                    </div>
+                        </div>
                     <span>GitHub</span>
                     <span class="date-projet">19 / 09 /2023</span>
                     </a>
