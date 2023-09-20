@@ -114,6 +114,11 @@ footer{
     border-radius:15px;
     padding:30px;
     margin:50px;
+    
+}
+
+#contact p{
+    word-break: break-word;
 }
 
 .separator{
@@ -171,6 +176,11 @@ background-color: #999999;
     margin-bottom:15px;
 }  
 
+img[title="GitHub"]{
+    padding-top:30px;
+}
+
+
 font-face {
     font-family: theblacklist;
     src: url('font/theblacklist.ttf') format('truetype');
@@ -203,7 +213,7 @@ font-face {
     }
 
     #contact p{
-        word-break: break-all;
+        word-break: break-word;
     }
 
     html{
