@@ -11,7 +11,7 @@
 
 body{
     font-family:'Roboto',sans-serif;
-    background-color: #F4F7F6;
+    background-color: #f7f7f4;
     color:black;
     margin:0;
 }
@@ -28,9 +28,6 @@ a{
     color:black;
 }
 
-p{
-    /* text-align: justify; */
-}
 
 h1{
     font-family: theblacklist,arial ;
@@ -91,6 +88,62 @@ ul>li:hover{
     font-weight: bold;
 }
 
+.snip1226 {
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .snip1226 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    
+  }
+  .snip1226 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+  }
+  .snip1226 a {
+    padding: 0.3em 0;
+    color: black;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  .snip1226 a:before,
+  .snip1226 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1226 a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px; 
+    width: 100%;
+    content: "";
+    background-color: #917c6f;
+  }
+  .snip1226 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: black;
+    white-space: nowrap;
+  }
+  .snip1226 li:hover a,
+  .snip1226 .current a {
+    transform: translateY(100%);
+  }
+
+
 header{
     text-align: center;
     background-color:#1D1D1D;
@@ -100,7 +153,18 @@ header{
 
 section{
     text-align: center;
+    padding-top: 30px;
 }
+
+
+
+section[class="bienvenue"] > p{
+    width: 80%;
+    text-align: justify;
+    margin:auto;
+}
+
+
 
 footer{
    background-color: #1D1D1D; 
@@ -218,6 +282,10 @@ font-face {
 
     html{
         min-width:350px;
+    }
+
+    section[class="bienvenue"] > p{
+        text-align: justify;
     }
 
 }
