@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin:auto;
+    width:80%;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background-color: #F4F7F6;
+    color:black;
+    margin:0;
+}
+
+#logo{
+    margin-top:20px;
+    width:150px;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+p{
+    /* text-align: justify; */
+}
+
+h1{
+    font-family: theblacklist,arial ;
+    font-size: 2em;
+    margin-top:0;
+}
+
+h2{
+    font-family: 'Open Sans',sans-serif;
+    text-align: center;
+    font-size:1.5em;
+    width:400px;
+    margin:auto;
+}
+
+h3{
+    font-size:1.5em;
+    text-transform:uppercase;
+
+}
+
+h3:before {
+    content: "« ";
+    color:grey;
+}
+   
+h3:after {
+    content: " »";
+    color:grey;
+}
+
+
+
+
+nav{
+    display: flex;
+    width: 750px;
+    justify-items: auto;
+     text-align:center; 
+     background-color: white;
+     box-shadow: 0px 3px 1px -1px rgba(0,0,0,0.5);
+     font-size:1.1em;
+     padding:15px;
+    
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 100%;
+    
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: Black;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.nav-links a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+}
+
+.nav-links a:hover {
+    font-weight: bold;
+    transform: translateY(-100%);
+}
+
+
+/* ul{
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: space-around;
+}
+
+li{
+    list-style-type: none;
+    flex:1 1 auto;
+}
+
+ul>li:hover{
+    font-weight: bold;
+} */
+
+header{
+    text-align: center;
+    background-color:#1D1D1D;
+    color:white;
+    padding:30px;
+}
+
+section{
+    text-align: center;
+}
+
+footer{
+   background-color: #1D1D1D; 
+   color:white;
+   text-align: center;
+   padding:15px;
+}
+
+#contact{
+    border:1px black solid;
+    border-radius:15px;
+    padding:30px;
+    margin:50px;
+}
+
+.separator{
+width: 40px;
+height: 1px;
+margin:15px auto;
+display: block;
+background-color: #999999;
+}
+
+#projets{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+}
+
+.projet{
+    width:400px;
+    margin:30px;
+    background-color: white;
+    padding-bottom:15px;
+    /* display: inline-block; */
+    border-radius: 10px 10px 10px 10px;
+    border:0px black solid;
+    overflow:hidden;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+}
+
+.projet:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25),0 3px 6px rgba(0,0,0,0.22);
+    transition:0.3s;
+}
+
+
+.projet img{
+    min-width: 00px;
+    width:100%;
+    height:266px; 
+}
+
+.projet span{
+    display:block;
+    text-transform: uppercase;
+}
+
+.projet .date-projet{
+    font-size: 0.7em;
+}
+
+.picture{
+    width:100%;
+    height:266px; 
+    overflow:hidden;
+    margin-bottom:15px;
+    /* margin-top:15px; */
+}  
+
+font-face {
+    font-family: theblacklist;
+    src: url('font/theblacklist.ttf') format('truetype');
+}
+
+@media all and (max-width : 1000px) { 
+
+
+
+    #logo{
+        width:100px;
+    }
+
+    .projet{
+        width:100%;    
+        min-width: 100%;
+    }
+   .projet img{
+        width:100%;
+        height:266px;
+        min-width: 100%;
+   }
+
+   .projet .picture{
+        width:100%;
+        height:266px;
+        min-width: 100%;
+    }
+
+    header h2{
+        width:90%;
+    }
+
+    #contact{
+        margin:0 0 30px 0;
+    }
+
+    #contact p{
+        word-break: break-all;
+    }
+
+    html{
+        min-width:350px;
+    }
+
+}
